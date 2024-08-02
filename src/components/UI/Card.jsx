@@ -1,12 +1,14 @@
+
+
 function Card(props) {
-    return (
-        <div className="card text-center">
-      <div className="card-header">
-        <h2>{props.heading}</h2>
+  return (
+    <>
+      <div>
+        <h2 className="m-5 text-3xl">{props.heading}</h2>
       </div>
-      <div className="card-body">{props.children}</div>
-    </div>
-    )
+      <div>{props.children}</div>
+    </>
+  )
 }
 
 export default Card;
