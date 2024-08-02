@@ -1,15 +1,10 @@
-function PokemonDetail(props) {
+function PokemonDetail({id, name, type, generation, image }) {
     return (
       <div className="text-center">
-        <img
-          alt={props.title}
-          className="img-fluid"
-          src={props.src}
-          style={{ margin: '0 auto' }}
-        />
-        <h3>Name: {props.name}</h3>
-        <h3>Type: {props.type}</h3>
-        
+        <h1>{id}: {name}</h1>
+        <img src={image} alt={name}></img>
+        <h3>Type: {type}</h3>
+        <h2>Generation: {generation}</h2>
       </div>
     );
   }
